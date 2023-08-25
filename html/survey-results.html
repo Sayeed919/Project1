@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Results</title>
+  
+</head>
+<body>
+    <div class="container">
+        <h1>Survey Results</h1>
+        <table>
+            <tr>
+                <th>Category</th>
+                <th>Response</th>
+            </tr>
+            <tr>
+                <td>Student's Information</td>
+                <td><?php echo isset($_POST['name']) ? $_POST['name'] : ''; ?></td>
+            </tr>
+            <tr>
+                <td>Student's Information </td>
+                <td><?php echo isset($_POST['roll']) ? $_POST['roll'] : ''; ?></td>
+            </tr>
+            <tr>
+                <td>Student's Information</td>
+                <td><?php echo isset($_POST['department']) ? $_POST['department'] : ''; ?></td>
+            </tr>
+            <tr>
+                <td>Feedback about the Speakers</td>
+                <td><?php echo isset($_POST['speaker-feedback']) ? $_POST['speaker-feedback'] : ''; ?></td>
+            </tr>
+            <tr>
+                <td>Overall Arrangements of the Programme</td>
+                <td><?php echo isset($_POST['arrangements-feedback']) ? $_POST['arrangements-feedback'] : ''; ?></td>
+            </tr>
+            <tr>
+                <td>Any Other Suggestion</td>
+                <td><?php echo isset($_POST['suggestion']) ? $_POST['suggestion'] : ''; ?></td>
+            </tr>
+        </table>
+    </div>
+</body>
+<style>
+body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: lightblue;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: lightblue;
+        }
+</style>
+</html>
+
+
